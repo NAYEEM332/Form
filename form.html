@@ -16,36 +16,59 @@
     </style>
 </head>
 <body>
-    <header class="one">
-        <h2>Welcome to Dhaka University</h2>
-    </header>
-    <label for="name">Your Name:
-        <input type="name" name="name" id="name">
-    </label>
-    <label for="email"> Your Email:
-        <input type="email" name="email" id="email">
-    </label>
-    <label for="number"> Your Phone:
-        <input type="number" name="number" id="number">
-    </label>
-    <fieldset>
-        <legend>Choose a subject you like</legend>
-        <input type="radio" name="subject" id="english">
-        ENGLISH
-        <label for="english">
+    <form>
+        <header class="one">
+            <h2>Welcome to Dhaka University</h2>
+        </header>
+        <label for="name">Your Name:
+            <input type="name" name="name" id="name" placeholder="Your Name">
         </label>
-        <label for="bangla">
-            <input type="radio" name="subject" id="bangla">
-            BANGLA
+        <label for="email"> Your Email:
+            <input type="email" name="email" id="email" placeholder="Your Email">
         </label>
-        <label for="math">
-            <input type="radio" name="subject" id="math">
-            MATHEMATICS 
+        <label for="number"> Your Phone:
+            <input type="number" name="number" id="number" placeholder="Your Phone Number">
         </label>
-        <label for="science">
-            <input type="radio" name="subject" id="science">
-            SCIENCE
-        </label>
-    </fieldset>
+        <fieldset>
+            <legend>Choose a subject you like</legend>
+            <input type="radio" name="subject" id="english">
+            ENGLISH
+            <label for="english">
+            </label>
+            <label for="bangla">
+                <input type="radio" name="subject" id="bangla">
+                BANGLA
+            </label>
+            <label for="math">
+                <input type="radio" name="subject" id="math">
+                MATHEMATICS 
+            </label>
+            <label for="science">
+                <input type="radio" name="subject" id="science">
+                SCIENCE
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose shifts you want to enter</legend>
+            <label for="morning">
+                <input type="checkbox" name="morning" id="morning">
+                Morning Shift
+            </label>
+            <label for="day">
+                <input type="checkbox" name="morning" id="day">
+                Day Shift
+            </label>
+            <label for="night">
+                <input type="checkbox" name="morning" id="night">
+                Night shift
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>your Address</legend>
+            <textarea name="" id="" cols="90" rows="2"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
